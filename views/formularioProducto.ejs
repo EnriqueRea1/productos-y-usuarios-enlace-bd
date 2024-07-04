@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <%- include("templates/header") %>
 <h1>Registro de Productos</h1>
 <div class="contenedor">
@@ -22,29 +21,4 @@
     </form>
 </div>
 
-=======
-<%- include("templates/header") %>
-<h1>Registro de Productos</h1>
-<div class="contenedor">
-    <form action="/agregarProducto" method="post" id="formularioProducto">
-        <label for="nombre">Nombre: </label> <span class="errorNombre ocultar">Nombre no valido</span>
-        <input class="" autofocus name="nombre" id="nombre" type="text" placeholder="Nombre" /><span></span>
-        <i class="fa-solid fa-xmark ocultar xmarkErrorNombre correctoInput"></i>
-        <i class="fa-solid fa-check checkMarkNombre ocultar"></i>
-
-        <label for="categoria">Categoria: </label> <span class="errorCategoria ocultar">Categoria no valido</span>
-        <input  name="categoria" id="categoria" type="text" placeholder="Categoria"><span></span>
-        <i class="fa-solid ocultar fa-xmark xmarkErrorCategoria correctoInput"></i>
-        <i class="fa-solid fa-check checkMarkCategoria ocultar"></i>
-
-        <label for="descripcion">Descripcion: </label> <span class="errorDescripcion ocultar">Descripcion no valido</span>
-        <input  name="descripcion" id="descripcion" type="text" placeholder="Descripcion"><span></span>
-        <i class="fa-solid fa-xmark ocultar xmarkErrorDescripcion correctoInput"></i>
-        <i class="fa-solid fa-check checkMarkDescripcion ocultar"></i>
-
-        <button type="submit">Guardar datos</button>
-    </form>
-</div>
-
->>>>>>> 2bcf9ef260450b658da6e2fcab87e55e51e9196c
 <%- include("templates/footer") %>
