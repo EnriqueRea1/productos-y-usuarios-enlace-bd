@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -34,4 +35,42 @@
     </form>
 </div>
 
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - Usuarios</title>
+    <link rel="stylesheet" href="http://localhost:3000/css/estilos.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/scriptBlur.js" defer></script>
+    <script src="https://kit.fontawesome.com/e6060c4e37.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<h1>Editar usuario</h1>
+<div class="contenedor">
+    <form action="/editarUsuario" method="post" id="formulario">
+        <input type="hidden" value="<%= idusuario %>" name="idusuario" id="idusuario" >
+        
+        <label for="nombre">Nombre: </label> <span class="errorNombre ocultar">Nombre no valido</span>
+        <input type="text" value="<%= nombre %>" class="" autofocus name="nombre" id="nombre" placeholder="Nombre" /><span></span>
+        <i class="fa-solid fa-xmark ocultar xmarkErrorNombre correctoInput"></i>
+        <i class="fa-solid fa-check checkMarkNombre ocultar"></i>
+
+        <label for="celular">Celular: </label> <span class="errorCelular ocultar">Celular no valido</span>
+        <input value="<%= celular %>" name="celular" id="celular" type="text" placeholder="Celular"><span></span>
+        <i class="fa-solid ocultar fa-xmark xmarkErrorCelular correctoInput"></i>
+        <i class="fa-solid fa-check checkMarkCelular ocultar"></i>
+
+        <label for="correo">Correo: </label> <span class="errorCorreo ocultar">Correo no valido</span>
+        <input value="<%= correo %>"  name="correo" id="correo" type="text" placeholder="Correo"><span></span>
+        <i class="fa-solid fa-xmark ocultar xmarkErrorCorreo correctoInput"></i>
+        <i class="fa-solid fa-check checkMarkCorreo ocultar"></i>
+
+        <button type="submit">Editar usuario</button>
+    </form>
+</div>
+
+>>>>>>> 2bcf9ef260450b658da6e2fcab87e55e51e9196c
 <%- include("templates/footer") %>
