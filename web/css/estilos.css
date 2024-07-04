@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form{
+    width: 300px;
+    box-shadow: 0 0 20px rgb(178, 171, 171);
+    padding: 20px;
+    border-radius: 7px;
+    margin-top: 25px;
+}
+label{
+    margin-top: 10px;
+}
+input{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+    background-color: bisque;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid cadetblue;
+    width: 80%;
+}
+button{
+    margin-top: 10px;
+    padding: 5px;
+    background-color: cadetblue;
+    border: 0px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(133, 202, 204);
+    color: white;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorInput{
+    background-color: rgb(235, 196, 196) ;
+    border: solid 2px red;
+}
+
+.correctoInput{
+    background-color: rgb(65, 194, 84) ;
+    border: solid 2px rgb(74, 201, 11);
+}
+
+.errorCelular,.errorCorreo,.errorNombre, .errorCategoria, .errorDescripcion{
+    font-size: small;
+    color: red;
+}
+
+
+.xmarkErrorCorreo,.xmarkErrorNombre,.xmarkErrorCelular, .xmarkErrorCategoria, .xmarkErrorDescripcion{
+    color: red;
+}
+
+.checkMarkNombre,.checkMarkCorreo,.checkMarkCelular, .checkMarkCategoria, .checkMarkDescripcion{
+    color: rgb(75, 188, 75);
+}
+
+
+.ocultar{
+    display: none;
+    visibility: hidden;
+}

@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+table{
+    border: 3px solid darkcyan;
+    width: 80%;
+    border-spacing: 0px;
+}
+
+th{
+    background-color: darkcyan;
+    color: white;
+}
+
+td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid darkcyan;
+}
+
+tr:nth-child(odd){/*even*/
+    background-color: cadetblue;
+}
+
+.description{
+    width: 40%;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente, si es necesario */
+    height: 100vh; /* Altura de la ventana gráfica */
+  }
+  
+  /* Estilizar el enlace como un botón */
+  .button {
+    display: inline-block;
+    padding: 10px 20px; /* Espacio interno del botón */
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave */
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+  }
+
+.navigation{
+    margin: 20px;
+}
